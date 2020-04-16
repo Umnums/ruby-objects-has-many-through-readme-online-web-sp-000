@@ -23,4 +23,10 @@ class Waiter
     end
   end
 
+  def best_tipper
+    self.meals.sort do |a ,b|
+      a.tip <=>b.tip
+    end
+  end
+
 end
