@@ -27,7 +27,7 @@ class Waiter
     best = meals.sort do |a ,b|
       a.tip <=>b.tip
     end
-    best[0]
+    best[0].customer
   end
 
 end
